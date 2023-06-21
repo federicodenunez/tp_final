@@ -3,6 +3,23 @@ body {
   color: whitesmoke
 }
 
+#codif_gen {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#codif_gen  img {    
+  /*width: 60em;*/
+  /*height: 50em;*/
+}
+
+#codif_gen2  img {    
+  /*width: 60em;*/
+  /*height: 50em;*/
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
