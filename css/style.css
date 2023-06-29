@@ -20,6 +20,17 @@ body {
   height: 40em;
 }
 
+#iconos {
+  display: flex;
+  justify-content: center; /* Horizontally center the icons */
+  gap: 10px; /* Adjust the gap between the icons as needed */
+}
+
+#iconos img {
+  width: 20em;
+  height: 10em;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;

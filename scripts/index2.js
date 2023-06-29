@@ -45,7 +45,7 @@ function handleStepEnter(response) {
   // mostrar la correcta
   // response.index -> me da el indice en el que estamos
   d3.select("#img"+response.index)
-  .style('display', 'block')
+  .style('display', 'block')
 }
 
 
