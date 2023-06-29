@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Scrollytelling with Scrollama and D3</title>
+      <meta name="description" content="An example of how to combine scrollama.js with d3.js for scrollytelling" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="language">
+        Language: 
+        <a class="active" href="http://edriessen.com/app/scrollytelling-demo/">EN</a> |
+        <a href="http://edriessen.com/app/scrollytelling-demo/nl.html">NL</a>
+    </div>
+    <main>
+      <section class="generic" id="intro">
+        <h1>
+            Scrollytelling with scrollama.js and d3.js
+        </h1>
+        <p>
+            This is a scrollytelling demo. 
+            It was created using scrollama.js and d3.js. 
+            It assumes your screen is at least 1100 pixels wide
+            and it has only been tested on a modern Firefox browser.
+            Technical notes are down below.
+        </p>
+        <p>
+            Have fun.
+        </p>
+        <p class="seperator">
+        </p>
+      </section>
+
+      <section id="scrolly">
+          
+        <figure>
+            <div class="viz" id="avicii_viz"></div>
+        </figure>
+
+        <figure id="container_img">
+            <div id="codif_gen">
+              <img id="img0" src="./squizo\media\codificacion_generica_1.svg">
+              <img id="img1" src="./squizo\media\codificacion_generica_2.svg">
+              <img id="img2" src="./squizo\media\codificacion_generica_3.svg">
+              <img id="img3" src="./squizo\media\codificacion_generica_4.svg">
+            </div>
+        </figure>
+
+        <article>
+            
+            <div class="step" data-step="1">
+              
+                <h2>Codificación de las notas</h2>
+                <p>
+                    Transformamos cada canción en una nota, cuyas características reflejan
+                    distintos aspectos musicales de esta. Lo demostraremos con la canción <span class="label red">3005</span>
+                    de Childish Gambino.
+                </p>
+            </div>
+            
+            <div class="step" data-step="2">
+                <h2>Color</h2>
+                <p>
+                    Definimos el 
+                    <span class="label">color</span>
+                    de las notas en base al perfil que estemos analizando, sea el de
+                    <span class="label red">Lucas</span> o el de <span class="label green">Fede</span>.
+                </p>
+            </div>
+            
+            <div class="step" data-step="2">
+                <h2>Radio</h2>
+                <p>
+                    El tempo, o velocidad de la canción, define el radio de la elipse de la nota. En este caso, es de <span class="label">191 BPM</span> (beats
+                    per minute).
+                </p>
+            </div>
+            
+            <div class="step" data-step="3">
+                <h2>Longitud</h2>
+                <p>
+                   La longitud de la plica representa que tan <span class="label">acústica</span> es la canción porcentualmente. En este caso lo es eln un 14,1%.
+                </p>
+            </div>
+        </article>
+          
+      </section>
+
+      <section class="generic" id="outro">
+        <p class="seperator">
+        </p>
+        <p>
+            That's a wrap.
+            I hope you enjoyed this scrollytelling demo.
+            The technical notes are available on <a href="https://github.com/edriessen/scrollytelling-scrollama-d3-demo">Github</a>.
+        </p>  
+        <p>
+            If you have any question, <a href="http://www.edriessen.com/contact/">please do reach out to me</a>. 
+        </p>    
+    </section>
+    <section class="generic" id="footer">
+        <p>
+            <i>
+                This demo is created by Erik Driessen
+            </i>  
+        </p>
+      </section>
+    </main>
+
+<!--     <div class='debug'></div> -->
+    <script src="src/d3.5.9.1.min.js"></script>
+    <script src="src/intersection-observer.js"></script>
+    <script src="src/stickyfill.min.js"></script>
+    <script src="src/scrollama.min.js"></script>
+    <script src="d3-animations.js"></script>
+    <script src="scrollama-settings.js"></script>
+  </body>
+</html>
