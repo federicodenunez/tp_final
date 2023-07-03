@@ -1,4 +1,8 @@
 body {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5em;
   background-color: #121212;
   color: whitesmoke
 }
@@ -38,6 +42,9 @@ body {
   text-align: center;
 }
 h1 {
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 100;
   margin-bottom: 30px;
 }
 #slider {

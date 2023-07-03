@@ -1,3 +1,31 @@
+const audioFiles = [
+    "./audios/lucas/Love was really gone.m4a",
+    "./audios/lucas/_3005.m4a",
+    "./audios/lucas/PARADIs.m4a",
+    "./audios/lucas/Perfect circle.m4a",
+    "./audios/lucas/Ew.m4a",
+    "./audios/lucas/Cigarettes.m4a",
+    "./audios/lucas/I wonder.m4a",
+    "./audios/lucas/_16.m4a",
+    "./audios/lucas/The jungle.m4a",
+    "./audios/lucas/The fall.m4a",
+
+    "./audios/fede/Yellow.m4a",
+    "./audios/fede/Tired influencer.m4a",
+    "./audios/fede/Rapp.m4a",
+    "./audios/fede/La maquina.m4a",
+    "./audios/fede/Giorgio.m4a",
+    "./audios/fede/Pasajera.m4a",
+    "./audios/fede/Your mother.m4a",
+    "./audios/fede/Mockingbird.m4a",
+    "./audios/fede/Es un secreto.m4a",
+];
+
+function playM4A(Audio_a_tocar) {
+    const audio = new Audio(Audio_a_tocar);
+    audio.play();
+}
+
 // using d3 for convenience
 var main = d3.select("main");
 var scrolly = main.select("#scrolly");
@@ -25,6 +53,9 @@ function handleResize() {
     scroller.resize();
 }
 
+// inicializo el indice para los audios
+//let audio_index = 0;
+
 // scrollama event handlers
 function handleStepEnter(response) {
     console.log(response);
@@ -46,6 +77,10 @@ function handleStepEnter(response) {
   // response.index -> me da el indice en el que estamos
   d3.select("#img"+response.index)
   .style('display', 'block')
+
+  // Toca el audio correspondiente
+  playM4A(audioFiles[response.index-4]);
+  console.log(response.index-4);
 }
 
 
