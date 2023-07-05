@@ -3,23 +3,6 @@ const audioFiles = [
     "./audios/lucas/_3005.m4a",
     "./audios/lucas/PARADIs.m4a",
     "./audios/lucas/Perfect circle.m4a",
-    "./audios/lucas/Ew.m4a",
-    "./audios/lucas/Cigarettes.m4a",
-    "./audios/lucas/I wonder.m4a",
-    "./audios/lucas/_16.m4a",
-    "./audios/lucas/The jungle.m4a",
-    "./audios/lucas/The fall.m4a",
-
-    "./audios/fede/Yellow.m4a",
-    "./audios/fede/Tired influencer.m4a",
-    "./audios/fede/Rapp.m4a",
-    "./audios/fede/La maquina.m4a",
-    "./audios/fede/Giorgio.m4a",
-    "./audios/fede/Pasajera.m4a",
-    "./audios/fede/Viernes.m4a",
-    "./audios/fede/Your mother.m4a",
-    "./audios/fede/Mockingbird.m4a",
-    "./audios/fede/Secreto.m4a",
 ];
 
 // funcion para tocar el audio de cada nota en el step correspondiente

@@ -1,3 +1,16 @@
+const audioFiles = [
+    "./audios/lucas/Love was really gone.m4a",
+    "./audios/lucas/_3005.m4a",
+    "./audios/lucas/PARADIs.m4a",
+    "./audios/lucas/Perfect circle.m4a",
+];
+
+// funcion para tocar el audio de cada nota en el step correspondiente
+function playM4A(Audio_a_tocar) {
+    const audio = new Audio(Audio_a_tocar);
+    audio.play();
+}
+
 // using d3 for convenience
 var main = d3.select("main");
 var scrolly = main.select("#scrolly");
@@ -58,6 +71,10 @@ function handleStepEnter(response) {
   // response.index -> me da el indice en el que estamos
   d3.select("#img"+ currentIndex)
   .style('display', 'block')
+
+  // Toca el audio correspondiente
+  playM4A(audioFiles[response.index]);
+  console.log(response.index);
 }
     
 
