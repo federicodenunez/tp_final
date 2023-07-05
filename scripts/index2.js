@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const playButton2 = document.getElementById('playButton2');
   
     playButton1.addEventListener('click', function() {
-      handleButtonClick('./audios/Escala Fede completa.m4a', playButton1);
+      handleButtonClick('./audios/Escala Lucas.m4a', playButton1);
     });
   
     playButton2.addEventListener('click', function() {
-      handleButtonClick('./audios/Escala Lucas.m4a', playButton2);
+      handleButtonClick('./audios/Escala Fede completa.m4a', playButton2);
     });
   });
   function handleButtonClick(audioUrl, button) {

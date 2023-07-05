@@ -151,16 +151,17 @@ h3 {
 h3 {
     font-size: 2em;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 #partituras {
     position: relative;
     margin-bottom: 90px;
+    max-width: 1000px;
 }
 
 #scrolly {
-    width: 1100px;
+    width: 1000px;
     margin: 0 auto;
     position: relative;
 }
@@ -188,6 +189,10 @@ section.generic {
     margin: 0;
     width: 1000px;
     position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%
 }
 
 p.intro {
@@ -228,9 +233,11 @@ figure {
     margin: 0;
 }
 
-div chart_container {
-    display: flex;
-    justify-content: center;
+div.chart_container {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .step h2 {
@@ -358,7 +365,7 @@ a {
     background-color: #121212;
     margin-top: 50px;
     padding: 50px 0;
-    height: 250px;  
+    height: 200px;  
 }
 
 #footer p {
@@ -381,11 +388,12 @@ a {
 #container_img2 img {
     max-width: 800px;
     margin: auto;
-    margin-top: 6px;
     position: relative;
-    left: 96px;
     top: 0px;
-    width: 100%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 #container_img3 img {
@@ -398,14 +406,12 @@ a {
     width: 100%;
 }
 
-#container_img_b img {
-    max-width: 500px;
-    margin: auto;
-    width: 750px;
-    position: relative;
-    left: 30px;
-    top: 50px;
-}
+#container_img_b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 
 
 #iconos {

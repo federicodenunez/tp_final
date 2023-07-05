@@ -50,7 +50,7 @@ scrollama magic happens here:
 */ 
 function handleStepEnter(response) {
     
-    console.log(response);
+    //console.log(response);
     // response = { element, direction, index }
     let currentIndex = response.index;
     //let currentDirection = response.direction;
