@@ -1,5 +1,5 @@
 // Read and process "fede.csv" dataset
-d3.csv("fede.csv", d3.autoType).then((fedeData) => {
+d3.csv("./grafico/fede.csv", d3.autoType).then((fedeData) => {
     // Plot the line for "fede.csv" dataset
     let fedeLine = Plot.line(fedeData, {
         x: (_, i) => i + 1,
@@ -10,7 +10,7 @@ d3.csv("fede.csv", d3.autoType).then((fedeData) => {
     });
 
     // Read and process "lucas.csv" dataset
-    d3.csv("lucas.csv", d3.autoType).then((lucasData) => {
+    d3.csv("./grafico/lucas.csv", d3.autoType).then((lucasData) => {
         // Plot the line for "lucas.csv" dataset
         let lucasLine = Plot.line(lucasData, {
             x: (_, i) => i + 1,
