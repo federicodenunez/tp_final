@@ -23,15 +23,9 @@
         ¿Cómo suena tu perfil de Spotify?
       </h1>
       <p>
-        This is a scrollytelling demo.
-        It was created using scrollama.js and d3.js.
-        It assumes your screen is at least 1100 pixels wide
-        and it has only been tested on a modern Firefox browser.
-        Technical notes are down below.
+        Vamos a comparar nuestros perfiles de Spotify y luego analizaremos cómo suenan convirtiendo nuestras canciones favoritas a <span class="label">notas musicales</span>.  
       </p>
-      <p>
-        Have fun.
-      </p>
+      <p>Have fun.</p>
       <p class="seperator">
       </p>
     </section>
@@ -102,13 +96,16 @@
   </main>
   <main>
     <section id="partituras">
-      <br><br><br>
+      <br><br><br><br>
+      <h5>Con un sistema que toma en cuenta la popularidad, la llave de cada canción y utilizando la codificación explicada vamos a ordenar y exponer las <span class="label">partituras</span> de nuestros Spotifys.</h5>
+      <br><br>
       <h3>Partitura de Lucas</h3>
-      <p class="sec">That's a wrap.
-        I hope you enjoyed this scrollytelling demo.</p>
       <figure id="container_img3">
         <img id="img5" src="escala_lucas/escala_lucas_10.svg">
       </figure>
+      <br><br>
+      <p class="sec">Las canciones representadas por cada nota son (en orden de aparición):</p>
+      <p class="sec"> Love Was Really gone, 3005, Paradise, Perfect Circle, Ew, Cigarettes, I Wonder, 16, The jungle y The fall.</p>
       <br><br>
       <section id="container_img_b">
         <svg id="playButton1" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
@@ -117,22 +114,28 @@
       </section>
       <br><br><br><br><br>
       <h3>Partitura de Fede</h3>
-      <p class="sec">That's a wrap.
-        I hope you enjoyed this scrollytelling demo.</p>
       <figure id="container_img3">
         <img id="img6" src="escala_fede/escala_fede_10.svg">
       </figure>
+      <br><br>
+      <p class="sec">Las canciones representadas por cada nota son (en orden de aparición):</p>
+      <p class="sec">Yellow Brick Road, The Tired Influencer, Rapp Snitch Knishes, La Máquina de Ser Feliz, Giorgio by Moroder, Pasajera en Trance, Your Mother Should Know, Mockingbird y Es Un Secreto.</p>
       <br><br>
       <section id="container_img_b">
         <svg id="playButton2" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
           <image href="botones/boton_play_black.svg" width="100" height="100" />
         </svg>
       </section>
-      
-      <div id="grafico">
-      
-
     </section>
+
+    <p>En el siguiente gráfico podemos ver las diferencias de popularidad de nuestro top 10 de canciones.</p>
+    <div class="chart_container">
+      <div id="grafico"></div>
+    </div>
+    <br>
+    <p>Ambas lineas son muy parecidas por lo que, en términos de popularidad, coinciden nuestros gustos.</p>
+    <p>Puede destacarse que Fede escucha tanto la canción menos popular como la más popular.</p>
+
 
   </main>
 

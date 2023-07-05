@@ -228,9 +228,10 @@ figure {
     margin: 0;
 }
 
-div chart_container {
+.chart_container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .step h2 {

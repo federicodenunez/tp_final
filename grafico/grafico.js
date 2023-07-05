@@ -27,6 +27,7 @@ d3.csv("./grafico/fede.csv", d3.autoType).then((fedeData) => {
                 axis: null
             },
             y: {
+                label: "Popularidad",
                 axis: null
             },
             style: {
