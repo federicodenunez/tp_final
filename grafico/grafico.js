@@ -35,10 +35,10 @@ d3.csv("fede.csv", d3.autoType).then((fedeData) => {
             }
         });
 
-        d3.select("#chart").append(() => chart);
+        d3.select("#grafico").append(() => chart);
 
         // Add event listeners for mouseover and mouseout
-        d3.selectAll("#chart svg path")
+        d3.selectAll("#grafico svg path")
             .on("mouseover", function () {
                 // Increase the line width on hover
                 d3.select(this).attr("stroke-width", 5);
