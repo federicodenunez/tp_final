@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>Scrollytelling with Scrollama and D3</title>
+      <title>¿Cómo suena tu perfil de Spotify?</title>
       <meta name="description" content="An example of how to combine scrollama.js with d3.js for scrollytelling" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,15 +13,10 @@
   </head>
 
   <body>
-    <div id="language">
-        Language: 
-        <a class="active" href="http://edriessen.com/app/scrollytelling-demo/">EN</a> |
-        <a href="http://edriessen.com/app/scrollytelling-demo/nl.html">NL</a>
-    </div>
     <main>
       <section class="generic" id="intro">
         <h1>
-            Scrollytelling with scrollama.js and d3.js
+            ¿Cómo suena tu perfil de Spotify?
         </h1>
         <p>
             This is a scrollytelling demo. 
@@ -36,13 +31,11 @@
         <p class="seperator">
         </p>
       </section>
+      <figure id="container_img2">
+        <img id="img5" src="media/3005-childish-gambino.gif">   
+      </figure> 
 
       <section id="scrolly">
-          
-        <figure>
-            <div class="viz" id="avicii_viz"></div>
-        </figure>
-
         <figure id="container_img">
             <div id="codif_gen">
               <img id="img0" src="media/codificacion_generica_1.svg">
@@ -50,20 +43,26 @@
               <img id="img2" src="media/codificacion_generica_3.svg">
               <img id="img3" src="media/codificacion_generica_4.svg">
             </div>
-        </figure>
-
+        </figure> 
+       
         <article>
-            
+            <figure id="container_img">
+                <img id="img0" src="media/codificacion_generica_1.svg">
+            </figure>
             <div class="step" data-step="1">
-              
-                <h2>Codificación de las notas</h2>
+                 
+                <h2>Codif de las notas</h2>
                 <p>
                     Transformamos cada canción en una nota, cuyas características reflejan
                     distintos aspectos musicales de esta. Lo demostraremos con la canción <span class="label red">3005</span>
                     de Childish Gambino.
                 </p>
+                
             </div>
             
+            <figure id="container_img">
+                <img id="img1" src="media/codificacion_generica_2.svg">
+            </figure>
             <div class="step" data-step="2">
                 <h2>Color</h2>
                 <p>
@@ -74,7 +73,10 @@
                 </p>
             </div>
             
-            <div class="step" data-step="2">
+            <figure id="container_img">
+                <img id="img2" src="media/codificacion_generica_3.svg">
+            </figure>
+            <div class="step" data-step="3">
                 <h2>Radio</h2>
                 <p>
                     El tempo, o velocidad de la canción, define el radio de la elipse de la nota. En este caso, es de <span class="label">191 BPM</span> (beats
@@ -82,7 +84,10 @@
                 </p>
             </div>
             
-            <div class="step" data-step="3">
+            <figure id="container_img">
+                <img id="img3" src="media/codificacion_generica_4.svg">
+            </figure>
+            <div class="step" data-step="4">
                 <h2>Longitud</h2>
                 <p>
                    La longitud de la plica representa que tan <span class="label">acústica</span> es la canción porcentualmente. En este caso lo es eln un 14,1%.
@@ -107,7 +112,7 @@
     <section class="generic" id="footer">
         <p>
             <i>
-                This demo is created by Erik Driessen
+                Creado por Lucas Canda y Federico de Nuñez
             </i>  
         </p>
       </section>
@@ -118,7 +123,6 @@
     <script src="src/intersection-observer.js"></script>
     <script src="src/stickyfill.min.js"></script>
     <script src="src/scrollama.min.js"></script>
-    <script src="d3-animations.js"></script>
     <script src="scrollama-settings.js"></script>
   </body>
 </html>
