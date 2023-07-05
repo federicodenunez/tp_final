@@ -16,9 +16,10 @@ const audioFiles = [
     "./audios/fede/La maquina.m4a",
     "./audios/fede/Giorgio.m4a",
     "./audios/fede/Pasajera.m4a",
+    "./audios/fede/Viernes.m4a",
     "./audios/fede/Your mother.m4a",
     "./audios/fede/Mockingbird.m4a",
-    "./audios/fede/Es un secreto.m4a",
+    "./audios/fede/Secreto.m4a",
 ];
 
 function playM4A(Audio_a_tocar) {
