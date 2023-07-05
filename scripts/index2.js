@@ -41,12 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
       handleButtonClick('./audios/Escala Lucas.m4a', playButton2);
     });
   });
-  
   function handleButtonClick(audioUrl, button) {
     const audio = new Audio(audioUrl);
   
     // Change the SVG button to the "playing" state
-    button.innerHTML = '<image href="./botones/boton_played.svg" width="100" height="100" />';
+    button.innerHTML = '<image href="./botones/boton_played_black.svg" width="100" height="100" />';
   
     // Play the audio
     audio.play();
@@ -54,14 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Wait for the audio to finish playing
     audio.addEventListener('ended', function() {
       // Change the SVG button back to the initial state
-      button.innerHTML = '<image href="./botones/boton_play.svg" width="100" height="100" />';
+      button.innerHTML = '<image href="./botones/boton_play_black.svg" width="100" height="100" />';
     });
   }
   
 
 // using d3 for convenience
 var main = d3.select("main");
-var scrolly = main.select("#scrolly");
+var scrolly = main.select("#scrolly2");
 var figure = scrolly.select("figure");
 var article = scrolly.select("article");
 var step = article.selectAll(".step");
@@ -127,7 +126,7 @@ function init() {
     // 3. bind scrollama event handlers (this can be chained like below)
     scroller
         .setup({
-            step: "#scrolly article .step",
+            step: "#scrolly2 article .step",
             offset: 0.33,
             debug: false
         })
