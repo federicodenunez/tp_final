@@ -22,10 +22,42 @@ const audioFiles = [
     "./audios/fede/Secreto.m4a",
 ];
 
+// funcion para tocar el audio de cada nota en el step correspondiente
 function playM4A(Audio_a_tocar) {
     const audio = new Audio(Audio_a_tocar);
     audio.play();
 }
+
+// funcion para tocar la escala completa con el boton
+document.addEventListener('DOMContentLoaded', function() {
+    const playButton1 = document.getElementById('playButton1');
+    const playButton2 = document.getElementById('playButton2');
+  
+    playButton1.addEventListener('click', function() {
+      handleButtonClick('./audios/Escala Fede completa.m4a', playButton1);
+    });
+  
+    playButton2.addEventListener('click', function() {
+      handleButtonClick('./audios/Escala Lucas.m4a', playButton2);
+    });
+  });
+  
+  function handleButtonClick(audioUrl, button) {
+    const audio = new Audio(audioUrl);
+  
+    // Change the SVG button to the "playing" state
+    button.innerHTML = '<image href="./botones/boton_played.svg" width="100" height="100" />';
+  
+    // Play the audio
+    audio.play();
+  
+    // Wait for the audio to finish playing
+    audio.addEventListener('ended', function() {
+      // Change the SVG button back to the initial state
+      button.innerHTML = '<image href="./botones/boton_play.svg" width="100" height="100" />';
+    });
+  }
+  
 
 // using d3 for convenience
 var main = d3.select("main");
