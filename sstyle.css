@@ -453,6 +453,7 @@ a {
 #chart {
     display: flex;
     justify-content: center;
+    max-width: 800px;
 }
 
 
