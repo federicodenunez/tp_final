@@ -33,6 +33,7 @@ h3{
     position: relative;
 }
 
+
 article {
     position: relative;
     padding: 0;
@@ -55,7 +56,6 @@ section#intro{
     font-size: .8em;
 }
 figure {
-    position: -webkit-sticky;
     position: sticky;
     right: 0;
     width: 1000px;
@@ -64,11 +64,6 @@ figure {
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 10;
-}
-#avicii_viz{
-        background-color: #01080D;
-    width: 750px;
-    float: right;
 }
 
 
@@ -88,7 +83,7 @@ figure {
 
 .step h2{
     text-align: right;
-    font-size: 2em;
+    font-size: 3em;
     padding-bottom: 25px;
     line-height: .9em;
 }
@@ -188,11 +183,6 @@ a{
     height: 40em;
 }
  
-#container_img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 #language a{
     color: #F2E8DC;
@@ -212,3 +202,13 @@ a{
     margin: 0 auto;
 }
 
+
+#container_img img {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px; 
+    width: 750px;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+  }
