@@ -9,6 +9,9 @@ body{
     line-height: 1.5em;
     background-color: #121212; 
     color: whitesmoke;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
 }
 
 
@@ -17,6 +20,7 @@ h1{
     line-height: 1em;
     font-weight: 100;
     margin-bottom: 50px;
+    text-align: right;
 }
 h1 strong, h2, h3{
     font-weight: 700;
@@ -48,6 +52,10 @@ section.generic{
 
 section#intro{
     padding: 50px 0 0 0;
+}
+p.intro{
+    text-align: right;
+    margin-bottom: 25px;
 }
 #language{
     background: #01080D;
@@ -104,6 +112,7 @@ p{
     margin-bottom: 25px;
 
 }
+
 p strong{
     font-weight: 700;
 }
@@ -209,6 +218,16 @@ a{
     margin-top: 30px; 
     width: 750px;
     position: absolute;
-    left: 300px;
+    left: 320px;
     top: 50px;
   }
+
+#container_img2 img {
+max-width: 500px;
+margin: auto;
+margin-top: 11px; 
+position: relative;
+left:230px;
+top: 50px;
+width: 100%;
+}
